@@ -25,7 +25,7 @@
          	rank: 'user/bouncer/mod/manager',
          	type: 'startsWith/exact',
          	functionality: function(chat, cmd){
-        		 if(this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+        		if(this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
          		if( !bot.commands.executable(this.rank, chat) ) return void (0);
          		else{
          		//Commands functionality goes here.
@@ -98,7 +98,7 @@
         afkRankCheck: "ambassador",
         motdEnabled: false,
         motdInterval: 5,
-        motd: "Welcome To Habbo SWAT DJ Station",
+        motd: null,
         filterChat: true,
         etaRestriction: false,
         welcome: true,
