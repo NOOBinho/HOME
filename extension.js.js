@@ -1,7 +1,7 @@
 (function () {
 
     //Change this to your GitHub username so you don't have to modify so many things.
-    var fork = "redmairo";
+    var fork = "NOOBinho";
 
     //Define our function responsible for extending the bot.
     function extend() {
@@ -21,16 +21,16 @@
          Model code for a bot command:
 
          bot.commands.commandCommand = {
-         command: 'cmd',
-         rank: 'user/bouncer/mod/manager',
-         type: 'startsWith/exact',
-         functionality: function(chat, cmd){
-         if(this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-         if( !bot.commands.executable(this.rank, chat) ) return void (0);
-         else{
-         //Commands functionality goes here.
-         }
-         }
+         	command: 'cmd',
+         	rank: 'user/bouncer/mod/manager',
+         	type: 'startsWith/exact',
+         	functionality: function(chat, cmd){
+        		 if(this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+         		if( !bot.commands.executable(this.rank, chat) ) return void (0);
+         		else{
+         		//Commands functionality goes here.
+         		}
+        	 }
          }
 
          */
@@ -56,14 +56,14 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "Dani",
-        language: "english",
+        botName: "NOOBinhoBOT", //Define a name for your bot
+        language: "portuguese",
         chatLink: "https://rawgit.com/redmairo/basicBot-customization/master/lang/en.json",
-        startupCap: 1, // 1-200
-        startupVolume: 0, // 0-100
-        startupEmoji: false, // true or false
+        startupCap: 100, // 1-200
+        startupVolume: 50, // 0-100
+        startupEmoji: true, // true or false
         autowoot: true,
-        autoskip: false,
+        autoskip: true,
         smartSkip: true,
         cmdDeletion: true,
         maximumAfk: 120,
@@ -86,13 +86,13 @@
         usercommandsEnabled: true,
         skipPosition: 3,
         skipReasons: [
-            ["theme", "This song does not fit the room theme. "],
-            ["op", "This song is on the OP list. "],
-            ["history", "This song is in the history. "],
-            ["mix", "You played a mix, which is against the rules. "],
-            ["sound", "The song you played had bad sound quality or no sound. "],
-            ["nsfw", "The song you contained was NSFW (image or sound). "],
-            ["unavailable", "The song you played was not available for some users. "]
+            ["tema", "A música não se encaixa nos padrões da sala. "],
+                ["op", "Essa música está na lista OP. "],
+                ["historico", "A música ainda está no histórico. "],
+                ["mix", "Você tocou um mix (muito longo) - não permitido. "],
+                ["som", "A música que você tocou tinha má qualidade ou estava sem som. "],
+                ["nsfw", "A música que você tocou é NSFW (impróprio). "],
+                ["indisponivel", "A música que você tocou está indisponível. "]
         ],
         afkpositionCheck: 15,
         afkRankCheck: "ambassador",
