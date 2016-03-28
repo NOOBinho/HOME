@@ -56,9 +56,9 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "NOOBinhoBOT", //Define a name for your bot
+        botName: "Rock", //Define a name for your bot
         language: "portuguese",
-        chatLink: "https://rawgit.com/redmairo/basicBot-customization/master/lang/en.json",
+        chatLink: "https://raw.githubusercontent.com/NOOBinho/HOME/master/pt-br.json",
         startupCap: 100, // 1-200
         startupVolume: 50, // 0-100
         startupEmoji: true, // true or false
@@ -107,7 +107,7 @@
         themeLink: null,
         fbLink: null,
         youtubeLink: null,
-        website: "HabboSwat.com",
+        website: null,
         intervalMessages: [],
         messageInterval: 5,
         songstats: false,
