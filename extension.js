@@ -56,7 +56,7 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "Rock", //Define a name for your bot
+        botName: "RockBOT", //Define a name for your bot
         language: "portuguese",
         chatLink: "https://raw.githubusercontent.com/NOOBinho/HOME/master/pt-br.json",
         startupCap: 100, // 1-200
