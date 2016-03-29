@@ -60,7 +60,7 @@
         language: "portuguese",
         chatLink: "https://raw.githubusercontent.com/NOOBinho/HOME/master/pt-br.json",
         startupCap: 100, // 1-200
-        startupVolume: 50, // 0-100
+        startupVolume: 60, // 0-100
         startupEmoji: true, // true or false
         autowoot: true,
         autoskip: true,
