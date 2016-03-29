@@ -56,7 +56,7 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "RockBOT", //Define a name for your bot
+        botName: "RockOnline", //Define a name for your bot
         language: "portuguese",
         chatLink: "https://raw.githubusercontent.com/NOOBinho/HOME/master/pt-br.json",
         startupCap: 100, // 1-200
@@ -67,7 +67,7 @@
         smartSkip: true,
         cmdDeletion: true,
         maximumAfk: 120,
-        afkRemoval: false,
+        afkRemoval: true,
         maximumDc: 60,
         bouncerPlus: true,
         blacklistEnabled: true,
@@ -84,7 +84,7 @@
         autodisable: true,
         commandCooldown: 30,
         usercommandsEnabled: true,
-        skipPosition: 3,
+        skipPosition: 1,
         skipReasons: [
             ["tema", "A música não se encaixa nos padrões da sala. "],
                 ["op", "Essa música está na lista OP. "],
@@ -105,7 +105,7 @@
         opLink: null,
         rulesLink: null,
         themeLink: null,
-        fbLink: null,
+        fbLink: "https://www.facebook.com/groups/rockonlineplugdj/",
         youtubeLink: null,
         website: null,
         intervalMessages: [],
